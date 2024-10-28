@@ -1,0 +1,162 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f4f4f9;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  background-color: #007bff;
+  padding: 1em 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .logo {
+  height: 50px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #e9ecef;
+  padding: 2em 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+/* Units Section */
+.units-section {
+  padding: 2em 0;
+}
+
+.units-section h2 {
+  font-size: 1.8em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.unit-card {
+  background-color: #fff;
+  padding: 1.5em;
+  margin-bottom: 1em;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.unit-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.unit-card p {
+  margin-bottom: 0.5em;
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: #007bff;
+  color: #fff;
+  padding: 2em 0;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 0.9em;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer a:hover {
+  color: #ddd;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .header {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .nav ul {
+      flex-direction: column;
+  }
+
+  .hero h1 {
+      font-size: 2em;
+  }
+
+  .units-section h2, .unit-card h3 {
+      font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+      font-size: 1.8em;
+  }
+
+  .hero p, .contact-section p {
+      font-size: 1em;
+  }
+
+  .unit-card h3 {
+      font-size: 1.3em;
+  }
+}
